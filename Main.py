@@ -1,20 +1,4 @@
-1. Install PyTorch
-You need to have PyTorch installed. You can install it using pip if it's not already installed:
-bash
-pip install torch
-2. Verify the Code Environment
-Ensure that your Python environment has the necessary dependencies. The given code primarily relies on `torch` (PyTorch) and doesn't require additional libraries for this example.
- 3. Running the Code
-You can save the code in a Python file (e.g., `mmstne_model.py`) and run it. Here's a step-by-step guide:
-1. Save the Code:
-   Save the provided code into a file named `mmstne_model.py`.
-2. Run the Code:
-   Execute the script using Python.
-bash
-python mmstne_model.py
- Code in a Single File
-Here is the entire code that you can save and run:
-python
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
