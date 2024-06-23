@@ -1,5 +1,5 @@
 def load_bjtaxi_data(file_path):
-    # Load the dataset (BJTaxi.csv)
+    # Load the dataset (NYCBike.csv)
     data = pd.read_csv(file_path)
     return data
 
