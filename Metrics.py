@@ -45,12 +45,3 @@ def masked_rmse_np(y_true, y_pred, null_val=np.nan):
     rmse = math.sqrt(np.mean(np.nan_to_num(mask * mse)))
     return rmse
 
-
-def masked_mae_np(y_true, y_pred, null_val=np.nan):
-    y_true = y_true.detach().numpy()
-    y_pred = y_pred.detach().numpy()
-    
-    mask = mask_np(y_true, null_val)
-    mask /= mask.mean()
-    mae = np.abs(y_true - y_pred)
-    return np.mean(np.nan_to_num(mask * mae))
